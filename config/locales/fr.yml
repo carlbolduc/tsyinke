@@ -1,0 +1,9 @@
+fr:
+  static_pages:
+    home:
+      title: "Accueil"
+      intro: "La seule chose que vous pouvez faire ici c'est rentrer votre temps."
+    about:
+      title: "À propos"
+    help:
+      title: "Aide"
