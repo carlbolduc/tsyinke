@@ -12,3 +12,10 @@ fr:
       title: "S'enregistrer"
     create:
       success: "Bienvenue dans Timesheet Yinke"
+  sessions:
+    new:
+      title: "Connexion"
+      new_user: "Nouvel utilisateur? "
+      sign_up_now: "Enregistrez-vous maintenant!"
+    create:
+      danger: "Mauvaise combinaison courriel/mot de passe"

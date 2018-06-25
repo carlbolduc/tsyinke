@@ -1,0 +1,15 @@
+<% provide(:title, t('.title')) %>
+<h1><%= t '.title' %></h1>
+
+<%= form_for(:session, url: login_path) do |f| %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <%= f.submit t('.title') %>
+<% end %>
+
+<p><%= t '.new_user' %><%= link_to t('.sign_up_now'), signup_path %></p>

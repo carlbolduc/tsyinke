@@ -12,3 +12,10 @@ en:
       title: "Sign up"
     create:
       success: "Welcome to Timesheet Yinke"
+  sessions:
+    new:
+      title: "Log in"
+      new_user: "New user? "
+      sign_up_now: "Sign up now!"
+    create:
+      danger: "Invalid email/password combination"
