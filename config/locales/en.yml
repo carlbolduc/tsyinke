@@ -7,3 +7,8 @@ en:
       title: "About"
     help:
       title: "Help"
+  users:
+    new:
+      title: "Sign up"
+    create:
+      success: "Welcome to Timesheet Yinke"

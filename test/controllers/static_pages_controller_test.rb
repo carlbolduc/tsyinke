@@ -12,19 +12,19 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get home" do
-    get static_pages_home_url
+    get root_url
     assert_response :success
     assert_select "title", I18n.t('static_pages.home.title') + " | #{@base_title}"
   end
 
   test "should get help" do
-    get static_pages_help_url
+    get help_url
     assert_response :success
     assert_select "title", I18n.t('static_pages.help.title') + " | #{@base_title}"
   end
 
   test "should get about" do
-    get static_pages_about_url
+    get about_url
     assert_response :success
     assert_select "title", I18n.t('static_pages.about.title') + " | #{@base_title}"
   end
