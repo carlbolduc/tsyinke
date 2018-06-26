@@ -8,10 +8,18 @@ en:
     help:
       title: "Help"
   users:
+    index:
+      title: "All users"
+    edit:
+      title: "Edit user"
     new:
       title: "Sign up"
     create:
       success: "Welcome to Timesheet Yinke"
+    update:
+      success: "Profile updated"
+    destroy:
+      success: "User deleted"
   sessions:
     new:
       title: "Log in"

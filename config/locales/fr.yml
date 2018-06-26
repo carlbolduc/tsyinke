@@ -8,10 +8,18 @@ fr:
     help:
       title: "Aide"
   users:
+    index:
+      title: "Tous les utilisateurs"
+    edit:
+      title: "Modifier l'utilisateur"
     new:
       title: "S'enregistrer"
     create:
       success: "Bienvenue dans Timesheet Yinke"
+    update:
+      success: "Profile mis à jour"
+    destroy:
+      success: "Utilisateur effacé"
   sessions:
     new:
       title: "Connexion"
