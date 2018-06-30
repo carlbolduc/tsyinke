@@ -1,2 +1,9 @@
 <% provide(:title, @role.name) %>
 <h1><%= @role.name %></h1>
+<ul>
+  <% for user in @role.users %>
+    <li><%= link_to user.name, user_path(user) %></li>
+  <% end %>
+  
+</ul>
+<%= link_to 'Back to roles list', roles_path %>

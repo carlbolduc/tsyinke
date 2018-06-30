@@ -1,5 +1,6 @@
 <li>
   <%= link_to role.name, role %>
+  <%= link_to 'edit', edit_role_path(role) %>  
   <% if current_user.admin? %>
     | <%= link_to "delete", role, method: :delete,
                   data: { confirm: "You sure?"} %>

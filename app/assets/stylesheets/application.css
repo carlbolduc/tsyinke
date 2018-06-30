@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+header nav li {
+    display: inline;
+}
+ 
+input[type='text'], input[type='email'], input[type='password'] {
+    display: block;
+}

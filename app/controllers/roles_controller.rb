@@ -15,7 +15,7 @@ class RolesController < ApplicationController
     @role = Role.new(role_params)
     if @role.save
       flash[:success] = t('.success')
-      redirect_to @role
+      redirect_to roles_url
     else
       render 'new'
     end

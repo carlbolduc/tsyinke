@@ -1,6 +1,8 @@
 <% provide(:title, t('.title')) %>
+<% provide(:button_text, 'Update') %>
 <h1><%= t '.title' %></h1>
 
 <%= form_for(@user) do |f| %>
   <%= render 'form' %>
 <% end %>
+<%= link_to 'Cancel', users_path %>

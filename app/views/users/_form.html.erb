@@ -12,6 +12,12 @@
 
   <%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation %>
+  
+  <div class="field">
+    <%= f.collection_check_boxes(:role_ids, Role.all, :id, :name, checked: @user.roles.map(&:id)) do |b| %>    
+      <%= b.check_box %> <%= b.label %>
+    <% end %>
+  </div>
 
   <%= f.submit yield(:button_text) %>
 <% end %>
