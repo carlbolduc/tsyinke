@@ -1,0 +1,7 @@
+<% provide(:title, t('.title')) %>
+<% provide(:button_text, 'Create') %>
+<h1><%= t '.title' %></h1>
+
+<%= form_for(@project) do |f| %>
+  <%= render 'form' %>
+<% end %>

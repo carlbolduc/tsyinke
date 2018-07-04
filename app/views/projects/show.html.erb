@@ -1,0 +1,9 @@
+<% provide(:title, @project.name) %>
+<h1><%= @project.name %></h1>
+<ul>
+  <% for user in @project.users %>
+    <li><%= link_to user.name, user_path(user) %></li>
+  <% end %>
+  
+</ul>
+<%= link_to 'Back to projects list', projects_path %>

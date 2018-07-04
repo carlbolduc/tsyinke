@@ -1,0 +1,7 @@
+<% provide(:title, t('.title')) %>
+<h1><%= t '.title' %></h1>
+
+<ul>
+  <%= render @projects %>
+</ul>
+<%= link_to 'New project', new_project_path %>
