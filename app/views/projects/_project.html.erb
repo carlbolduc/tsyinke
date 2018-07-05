@@ -1,8 +1,8 @@
 <li>
   <%= link_to project.name, project %>
-  <%= link_to 'edit', edit_project_path(project) %>
+  <%= link_to t('link.edit'), edit_project_path(project) %>
   <% if current_user.admin? %>
-    | <%= link_to "delete", project, method: :delete,
-                  data: { confirm: "You sure?"} %>
+    | <%= link_to t('link.delete'), project, method: :delete,
+                  data: { confirm: t('confirm.delete')} %>
   <% end %>
 </li>

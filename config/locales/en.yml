@@ -8,18 +8,56 @@ en:
     help:
       title: "Help"
   users:
+    form:
+      user_roles: "Roles"
+      user_projects: "Projects"
     index:
       title: "All users"
+      danger: "Please log in"
     edit:
       title: "Edit user"
     new:
       title: "Sign up"
+    show:
+      back_to_list: "Back to users list"
     create:
       success: "Welcome to Timesheet Yinke"
     update:
       success: "Profile updated"
     destroy:
       success: "User deleted"
+  projects:
+    index:
+      title: "All projects"
+      new_project: "New project"
+    show:
+      back_to_list: "Back to projects list"
+    new:
+      title: "New project"
+    edit:
+      title: "Edit project"
+    create:
+      success: "Project created"
+    update:
+      success: "Project updated"
+    destroy:
+      success: "Project deleted"
+  roles:
+    index:
+      title: "All roles"
+      new_role: "New role"
+    show:
+      back_to_list: "Back to roles list"
+    new:
+      title: "New role"
+    edit:
+      title: "Edit role"
+    create:
+      success: "Role created"
+    update:
+      success: "Role updated"
+    destroy:
+      success: "Role deleted"
   sessions:
     new:
       title: "Log in"
@@ -27,3 +65,12 @@ en:
       sign_up_now: "Sign up now!"
     create:
       danger: "Invalid email/password combination"
+  link:
+    edit: "edit"
+    delete: "delete"
+    cancel: "cancel"
+  confirm:
+    delete: "Are you sure?"
+  button:
+    create: "Create"
+    update: "Update"
