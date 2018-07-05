@@ -1,0 +1,8 @@
+<li>
+  <%= link_to time_period.start, time_period %>
+  <%= link_to t('link.edit'), edit_time_period_path(time_period) %>
+  <% if current_user.admin? %>
+    | <%= link_to t('link.delete'), time_period, method: :delete,
+                  data: { confirm: t('confirm.delete')} %>
+  <% end %>
+</li>

@@ -1,0 +1,7 @@
+<% provide(:title, t('.title')) %>
+<% provide(:button_text, t('button.create')) %>
+<h1><%= t '.title' %></h1>
+
+<%= form_for(@time_period) do |f| %>
+  <%= render 'form' %>
+<% end %>

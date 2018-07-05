@@ -1,0 +1,7 @@
+<% provide(:title, t('.title')) %>
+<h1><%= t '.title' %></h1>
+
+<ul>
+  <%= render @time_periods %>
+</ul>
+<%= link_to t('.new_time_period'), new_time_period_path %>

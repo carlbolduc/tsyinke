@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   resources :users
   resources :roles
   resources :projects
+  resources :time_periods
 end
