@@ -3,6 +3,7 @@ class User < ApplicationRecord
   has_many :roles, through: :user_roles
   has_many :user_projects
   has_many :projects, through: :user_projects
+  has_many :time_entries
   attr_accessor :remember_token
   before_save { email.downcase! }
   validates :name, presence: true, length: { maximum: 50 }

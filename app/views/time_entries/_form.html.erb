@@ -1,0 +1,16 @@
+<%= form_for @time_entry, remote: true do |f| %>
+  <%= hidden_field_tag :time_period_id, @time_period.id %>
+
+  <%= f.label :hours %>
+  <%= f.number_field :hours, step: 0.25 %>
+
+  <%= f.label :project %>
+  <%= f.select(:project_id) do %>
+    <% current_user.projects.each do |p| -%>
+      <%= content_tag(:option, p.name, value: p.id) %>
+    <% end %>
+  <% end %>
+
+
+  <%= f.submit yield(:button_text) %>
+<% end %>

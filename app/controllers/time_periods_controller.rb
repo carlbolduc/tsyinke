@@ -5,6 +5,7 @@ class TimePeriodsController < ApplicationController
 
   def show
     @time_period = TimePeriod.find(params[:id])
+    @time_entries = TimeEntry.where(time_period_id: @time_peroid)
   end
 
   def new
