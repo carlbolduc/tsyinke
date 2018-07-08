@@ -5,7 +5,9 @@ class TimePeriodsController < ApplicationController
 
   def show
     @time_period = TimePeriod.find(params[:id])
-    @time_entries = TimeEntry.where(time_period_id: @time_peroid)
+    @time_entries = current_user.time_entries.where(
+      time_period_id: @time_period.id
+    ).order(:day)
   end
 
   def new

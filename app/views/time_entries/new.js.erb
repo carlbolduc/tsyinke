@@ -1,2 +1,2 @@
 el = htmlToElement("<%= escape_javascript(render 'form', locals: { time_period: @time_period }) %>");
-document.getElementById('new_time_entries').insertBefore(el, document.getElementById('new_time_entries').firstChild);
+document.getElementById('time_entries').appendChild(el);

@@ -1,20 +1,10 @@
 <% provide(:title, @time_period.start) %>
 <h1><%= @time_period.start %></h1>
-<ul>
-  <% if current_user.admin? %>
-    <% for user in User.all %>
-      <li><%= user.name %></li>
-    <% end %>
-  <% else %>
-    <% @time_entries.each do |time_entry| %>
-      <li><%= time_entry.hours %> hours</li>
-    <% end %>
-    <%= link_to '+', new_time_entry_path(:time_period_id => @time_period.id), remote: true %>
-  <% end %>
+<ul id="time_entries">
+  <%= render @time_entries %>
 </ul>
-
-<div id="new_time_entries">
-
+<div>
+  <%= link_to '+', new_time_entry_path(:time_period_id => @time_period.id), remote: true %>
 </div>
 
 <%= link_to t('.back_to_list'), time_periods_path %>
